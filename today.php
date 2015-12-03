@@ -1,6 +1,8 @@
 <?php
 /**
  * script for fetching a random fact from the "On this day..." page of wikipedia
+ *
+ * @toda parse params from hipchat
  */
 
 setlocale(LC_ALL, 'de_DE.utf8');
