@@ -7,4 +7,4 @@ and check "2. Configure your own slash command" under "Build your own integratio
 ## scripts
 - fakt.php - returns one random useless knowledge fact from neon
 - postillion.php - returns one random short fake news from postillion
-- today.php -   returns one random fact from the "On this day..." page of wikipedia
+- today.php - returns one random fact from the "On this day..." page of wikipedia

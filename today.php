@@ -52,11 +52,11 @@ foreach($arr_data['query']['pages'] as $arr_page)
     $data = $arr_page["extract"];
 }
 
-//var_dump($data);
 $arr_cats = preg_split($regx_cat,$data,0,PREG_SPLIT_DELIM_CAPTURE);
 
 $count = count($arr_cats);
 $act_cat = "";
+
 for($i = 0;$i<$count;$i++)
 {
     $str_cat = $arr_cats[$i];
@@ -68,7 +68,7 @@ for($i = 0;$i<$count;$i++)
         $act_cat = $str_cat_raw;
         continue;
     }
-    //var_dump($str_cat);
+
     if(preg_match_all($regex_er ,$str_cat, $arr_event))
     {
         if(empty($arr_out[$act_cat]))
@@ -97,6 +97,8 @@ echo json_encode(array("message" => $str_today,
 ));
 
 /**
+ * strips output string
+ *
  * @param string $cat
  * @param array $arr_out
  * @return string
